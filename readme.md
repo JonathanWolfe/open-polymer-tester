@@ -1,4 +1,4 @@
-# Omneo-Polymer-Tester
+# Open-Polymer-Tester
 
 Provides the `opt` server and test runner.
 
@@ -40,12 +40,12 @@ You can also start the server directly if you would like to use it as a lightwei
 It is useful to add this to your `npm-scripts`.
 
 ```sh
-node ./node_modules/omneo-polymer-tester/server.js start --port 3333
+node ./node_modules/open-polymer-tester/server.js start --port 3333
 ```
 ```json
 {
 	"scripts": {
-		"server": "node ./node_modules/omneo-polymer-tester/server.js start --port 3333"
+		"server": "node ./node_modules/open-polymer-tester/server.js start --port 3333"
 	}
 }
 ```
@@ -80,23 +80,4 @@ If it yells at you about being or running as root, you need to use the `no-sandb
 export OPT_NO_SANDBOX='true'
 
 $ opt run --no-sandbox
-```
-
-
-## Publishing New Versions
-- Using [`yarn`](https://yarnpkg.com) and [`np`](https://github.com/sindresorhus/np), create a new version
-	- Remember to always apply the `--yolo` and `--no-yarn` flags
-	- While developing, new branches **must** be published under prerelease types
-	- Prerelase tags should be something unique-ish. Your name should be fine.
-
-```sh
-# Example development publish
-yarn run np --yolo --no-yarn --any-branch --tag=jon 1.2.3-jon.4
-
-# Example final version publish
-
-# mark the new release
-# <version> can be "patch", "minor", or "major"
-yarn run np --yolo --no-yarn --any-branch <version>
-# merge pull request
 ```
