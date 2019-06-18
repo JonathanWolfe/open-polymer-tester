@@ -1,15 +1,12 @@
 {
-  "name": "omneo-polymer-tester",
+  "name": "open-polymer-tester",
   "version": "1.8.4",
   "description": "Runs unit tests for Polymer components",
   "author": "Jon Wolfe <jonathan.wolfe@siemens.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://code.siemens.com/mindsphere-mainline/analyticsservices/product-intelligence/polymer/omneo-polymer-tester"
-  },
-  "publishConfig": {
-    "registry": "https://captain.rtf.siemens.net/artifactory/api/npm/mindsphere_rnd-dev-npm/"
+    "url": "https://github.com/JonathanWolfe/open-polymer-tester"
   },
   "bin": {
     "opt": "./src/runner.js"
